@@ -9,7 +9,7 @@ namespace Chapter1
     {
         public string myMessage = "Welcome";
         private Text textWelcome;
-
+        public GameObject canvesWelcome;
         // Use this for initialization
         void Start()
         {
@@ -32,6 +32,15 @@ namespace Chapter1
             {
                 Debug.LogWarning("Welcome message is not assigned");
             }
+
+            StartCoroutine(DisableCanvas(3.5f));
+            
+        }
+
+        IEnumerator DisableCanvas(float waitTime)
+        {
+            yield return new WaitForSeconds(waitTime);
+            canvesWelcome.SetActive(false);
         }
     }
 }
