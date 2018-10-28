@@ -37,7 +37,7 @@ namespace S3
 
         void CheckForMenuToggleRequest()
         {
-            if(Input.GetKeyUp(KeyCode.Escape) && gameManagerMaster.isGameOver && !gameManagerMaster.isInventoryUIOn)
+            if(Input.GetKeyUp(KeyCode.Escape) && !gameManagerMaster.isGameOver && !gameManagerMaster.isInventoryUIOn)
             {
                 ToggleMenu();
             }

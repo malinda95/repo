@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/GTGD S3/My Scenes/Chapter2.unity
+- path: Assets/GTGD S3/My Scenes/GTGD S3.unity
   isLoaded: 1
   isActive: 1
